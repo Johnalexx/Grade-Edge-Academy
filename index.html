@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/x-icon" href="./icon.png">
+    <title>Grade Edge Academy</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/gradeedge.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+
+  </head>
+
+<body>
+  <!-- Form PHP -->
+  <?php
+    if(!empty($_POST["send"])){
+      $name = $_POST["name"];
+      $email = $_POST["email"];
+      $number = $_POST["number"];
+      $subject = $_POST["subject"];
+      $message = $_POST["message"];
+      $toEmail = $_POST["adegbolajohn1@gmail.com"];
+
+      $mailHeaders = "Name: " . $name . 
+      "\r\n Email address: " . $email .
+      "\r\n Phone Number: " . $number .
+      "\r\n Email Subject: " . $subject .
+      "\r\n Message: " . $message . "\r\n";
+
+      if(mail($toEmail, $name, $number, $mailHeaders)){
+        $successMessage = "Your Information has been Successfully Received"
+      }
+
+    }
+  ?>
+  <!-- Sub Header -->
+  <!-- <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-sm-8">
+          <div class="left-content">
+            <p><em>Designed by Johnalex</em></p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+          <div class="right-icons">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-behance"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+ <!-- ***** Header Area Start ***** -->
+ <header class="header-area header-sticky">
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <nav class="main-nav">
+                  <!-- ***** Menu Start ***** -->
+                    <!-- ***** Logo Start ***** -->
+                    <li class="nav-logo navbar-brand">
+                      <a href="index.html">
+                        <img src="./private/assets/gealogo.png" class="header-logo" width="50" height="50"/>
+                      </a>
+                    </li>
+                    <!-- ***** Logo End ***** -->
+                  <ul class="nav">
+                      <li class="scroll-to-section"></li>
+                      <!-- <li class="scroll-to-section"><a href="#top" class="active">Home</a></li> -->
+                      <li class="scroll-to-section"><a href="#about">About Us</a></li>
+                      <li class="scroll-to-section"><a href="#gallery">Gallery</a></li> 
+                      <li class="scroll-to-section"><a href="#courses">Courses</a></li> 
+                      <li class="scroll-to-section"><a href="#donation">Donations</a></li>
+                      <li class="scroll-to-section"><a href="#teams">Our Team</a></li>
+                      <li class="scroll-to-section"><a href="#contact">Contact Us</a></li> 
+                  </ul>        +
+                  <a class='menu-trigger'>
+                      <span>Menu</span>
+                  </a>
+                  <!-- ***** Menu End ***** -->
+              </nav>
+          </div>
+      </div>
+  </div>
+</header>
+<!-- ***** Header Area End ***** -->
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top" data-section="section1">
+      <video autoplay muted loop id="bg-video">
+          <source src="assets/images/vidx/vidtwo.mp4" type="video/mp4" />
+      </video>
+
+      <div class="video-overlay header-text">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                  <div class="caption">
+                  <h6>Hello!.</h6>
+                  
+                  <h2>Welcome to Grade Edge Academy</h2>
+                  <p>
+                    At Grade Edge Academy, we provide in-demand skills, the resources
+                    and support services to our students.
+                    <br/>We are resourceful <b>STEM, TVET & Entrepreneurship Educators</b> with
+                    vast experience in building in-demand skills in children.
+                  </p>
+                  <div class="main-button-red">
+                      <div class="scroll-to-section"><a href="#contact">Join Us Now!</a></div>
+                  </div>
+                  <br/>
+                    <div class="hero-extra">
+                        <div class="hero-socials">
+                          <p>Kindly Follow us:</p><br/>
+                          <span class="social-ico">
+                              <a href="https://www.facebook.com/gradeedgeacademy?mibextid=ZbWKwL"
+                                  target="_blank">
+                                <i class="fa fa-facebook"></i>
+                              </a>
+                          </span>
+                          <span class="social-ico">
+                              <a href="https://www.linkedin.com/in/grade-edge-academy-39312a284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                  target="_blank">
+                                <i class="fa fa-linkedin"></i>
+                              </a>
+                          </span>
+                          <span class="social-ico">
+                              <a href="https://www.youtube.com/@GradeEdgeAcademy-il5eo"
+                                    target="_blank">
+                                <i class="fa fa-youtube"></i>
+                              </a>
+                          </span>
+                        </div>
+                    <br/>
+                    <br/>
+                      <div class="hero-quote">
+                        <h3><marquee>
+                          "For the world to rise to the challenges of the
+                          21st century, there must be a joint effort to end gender imbalance in science" - 
+                          <span class="quoter"><b>Antonio Gutteres ,UN Secretary General</b></span>
+                        </marquee></h3>
+                          <br/><br/><br/><br/>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+  <!-- Scroll To Top -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <span><img src="./assets/images/up.png"/></span>
+  </button>
+
+  <!-- Services Section -->
+  <section class="services">
+    <div class="container">
+      <div class="row">
+        <br/>
+        <h3>Our Services Include</h3>
+        <div class="col-lg-12">
+          <div class="owl-service-item owl-carousel">
+            <div class="item">
+              <div class="icon">
+                <img src="assets/images/service-icon-01.png" alt="">
+              </div>
+              <div class="down-content">
+                <h4>STEM Tutoring Services (Virtual & Physical Class)</h4>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="icon">
+                <img src="assets/images/service-icons/settings.png" alt="">
+              </div>
+              <div class="down-content">
+                <h4>STEM Curriculum Development</h4>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="icon">
+                <img src="assets/images/service-icons/idea.png" alt="">
+              </div>
+              <div class="down-content">
+                <h4>STEM Mentorship</h4>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="icon">
+                <img src="assets/images/service-icons/029-badge.png" alt="">
+              </div>
+              <div class="down-content">
+                <h4>STEM Club and Career Fair</h4>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="icon">
+                <img src="assets/images/service-icons/target-1.png" alt="">
+              </div>
+              <div class="down-content">
+                <h4>Career Guidance and Counseling</h4>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="icon">
+                <img src="assets/images/service-icons/presentation.png" alt="">
+              </div>
+              <div class="down-content">
+                <h4>Teacher Training and Capacity Development</h4>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="icon">
+                <img src="assets/images/service-icons/van.png" alt="">
+              </div>
+              <div class="down-content">
+                <h4>Excursion Services</h4>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about-us" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 align-self-center">
+            <div class="row">
+              <div class="col-lg-12">
+                <br/><br/><br/>
+                <div class="item">
+                  <h3>ABOUT GRADE EDGE ACADEMY</h3>
+                  <p>
+                    Grade Edge Academy is a  a value-driven, social innovation academy established in 2023 with a vision to empower the next generation 
+                    of leaders from underserved communities in Africa through transformative STEM education and mentorship, ensuring that every child, 
+                    regardless of background, has the opportunity to pursue a successful career and make a positive impact in his/her community and beyond.
+                    <br/>For us, diversity is a virtue in STEM and we are extraordinarily passionate about helping as many of our young girls as possible, to gain an 
+                    interest, to maintain an interest and ultimately, to pursue a career in STEM. We know from our past success stories that a career in STEM for
+                    girls is fun, very rewarding, and can make a huge difference in breaking all cultural and societal stereotypes and biases that prevent them from reaching their goals.
+                  </p>
+                  <div class="main-button-red">
+                    <div class="scroll-to-section"><a href="#donation">Donate</a></div>
+                </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="item">
+                  <h3>WHY STEM FOR GIRLS?</h3>
+                  <p>
+                    <ul class="stemlist">
+                      <li>•	According to UNESCO, only 35% of students in higher education globally are women. </li>
+                      <li>•	The development of STEM education is critical in achieving the objectives outlined by the United Nations in its 2030 Agenda and the Sustainable Development Goals, notably SDGs 4 and 5. </li>
+                    </ul>
+                  </p>
+                  <div class="main-button-yellow">
+                    <!-- <div class="scroll-to-section"><a href="#contact">Join Us Now!</a></div> -->
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <br/><br/><br/>
+            <div class="accordions is-first-expanded">
+              <article class="accordion">
+                  <div class="accordion-head">
+                      <span>Purpose Statement</span>
+                      <span class="icon">
+                          <i class="icon fa fa-chevron-right"></i>
+                      </span>
+                  </div>
+                  <div class="accordion-body">
+                      <div class="content">
+                          <p>
+                            Our purpose is to address the lack of equal access to STEM education, 
+                            mentorship and career opportunities for girls aged 12-14 in two underserved junior secondary schools in Idi-Araba Community, Mushin Lagos, Nigeria.
+                          </p>
+                      </div>
+                  </div>
+              </article>
+              <article class="accordion">
+                  <div class="accordion-head">
+                      <span>Ambition Statement</span>
+                      <span class="icon">
+                          <i class="icon fa fa-chevron-right"></i>
+                      </span>
+                  </div>
+                  <div class="accordion-body">
+                      <div class="content">
+                          <p>
+                            The ambition of our project is to launch a STEM club that will inspire and empower school girls to explore and pursue careers in STEM fields and to bridge the gender gap
+                            in STEM in two underserved junior secondary schools in Idi-Araba, Mushin, by the end of June 2024.
+                          </p>
+                      </div>
+                  </div>
+              </article>
+              <article class="accordion">
+                  <div class="accordion-head">
+                      <span>Achievements & Awards</span>
+                      <span class="icon">
+                          <i class="icon fa fa-chevron-right"></i>
+                      </span>
+                  </div>
+                  <div class="accordion-body">
+                      <div class="content">
+                          <p>
+                            Our partnership with <b>PlannedPath Consults</b> allows us to train science and mathematics teachers in secondary schools. 
+                            We recently received an award from the <b><i>Tutor-General/Permanent Secretary, Education District VI</i></b>, <b>Dr. (Mrs) Shareefah Ajoke Yusuf</b>, 
+                            for facilitating a capacity development workshop tagged <quote>"Education Reform and Innovation Training (ERIT)"</quote> for over <b>3,000</b> teachers in the district. 
+                            We have also completed several professional courses with reputable local and international organizations. 
+                            They include: <strong>SGs and the Law (University of Cambridge)</strong>, <strong>Climate and Sustainability Job Simulation (Forage)</strong>, <strong>SAIL Teachers' Fellowship</strong>,
+                            <strong>Teach4SDGs (AIIDEV Africa)</strong>, <strong> Global STEM Educators</strong>, <strong>Migrant Project (SEEFAR)</strong>, just to mention a few.
+                          </p>
+                      </div>
+                  </div>
+              </article>
+              <article class="accordion">
+                    <div class="accordion-head">
+                        <span>Specialized SDGs</span>
+                        <span class="icon">
+                            <i class="icon fa fa-chevron-right"></i>
+                        </span>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="content">
+                            <p>
+                              <span><h5>4. Quality Education</h5></span>
+                              <img src="./assets/images/sdg4.jpg">
+                            </p>
+                            <p>
+                              <span><h5>5. Gender Equality</h5></span>
+                              <img src="./assets/images/sdg5.jpg">
+                            </p>
+                        </div>
+                    </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <!-- Gallery 2 section -->
+  <section class="our-gallery" id="gallery">
+    <div class="col-lg-12">
+      <div class="gallery-heading">
+        <h2>Gallery</h2>
+        <br/><br/>
+      </div>
+    </div>
+    
+
+      <div class="container">
+        <div class="">
+              <div class="mySlides">
+                <div class="numbertext">1 / 24</div>
+                <img src="./assets/images/gallery/excursion1.jpg" style="width:100%">
+              </div>
+      
+              <div class="mySlides">
+                <div class="numbertext">2 / 24</div>
+                <img src="./assets/images/gallery/excursion2.jpg" style="width:100%">
+              </div>
+      
+              <div class="mySlides">
+                <div class="numbertext">3 / 24</div>
+                <img src="./assets/images/gallery/excursion3.jpg" style="width:100%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">4 / 24</div>
+                <img src="./assets/images/gallery/excursion5.jpg" style="width:100%">
+              </div>
+      
+              <div class="mySlides">
+                <div class="numbertext">5 / 24</div>
+                <img src="./assets/images/gallery/project1.jpg" style="width:100%">
+              </div>
+                
+              <div class="mySlides">
+                <div class="numbertext">6 / 24</div>
+                <img src="./assets/images/gallery/project2.jpg" style="width:100%">
+              </div>
+      
+              <div class="mySlides">
+                <div class="numbertext">7 / 24</div>
+                <img src="./assets/images/gallery/project4.jpg" style="width:100%">
+              </div>
+      
+              <div class="mySlides">
+                <div class="numbertext">8 / 24</div>
+                <img src="./assets/images/gallery/check1.jpg" style="width:100%">
+              </div>
+                
+              <div class="mySlides">
+                <div class="numbertext">9 / 24</div>
+                <img src="./assets/images/gallery/project6.jpg" style="width:100%">
+              </div>
+                
+              <div class="mySlides">
+                <div class="numbertext">10 / 24</div>
+                <img src="./assets/images/gallery/project7.jpg" style="width:100%">
+              </div>
+      
+              <div class="mySlides">
+                <div class="numbertext">11 / 24</div>
+                <img src="./assets/images/gallery/girl1.jpg" style="width:100%">
+              </div>
+      
+                  
+              <div class="mySlides">
+                <div class="numbertext">12 / 24</div>
+                <img src="./assets/images/gallery/interaction1.jpg" style="width:100%">
+              </div>
+      
+                
+              <div class="mySlides">
+                <div class="numbertext">13 / 24</div>
+                <img src="./assets/images/gallery/interaction2.jpg" style="width:100%">
+              </div>
+      
+              <div class="mySlides">
+                <div class="numbertext">14 / 24</div>
+                <img src="./assets/images/gallery/interaction3.jpg" style="width:100%">
+              </div>
+                
+              <div class="mySlides">
+                <div class="numbertext">15 / 24</div>
+                <img src="./assets/images/gallery/interaction4.jpg" style="width:100%">
+              </div>
+      
+              <div class="mySlides">
+                <div class="numbertext">16 / 24</div>
+                <img src="./assets/images/gallery/interaction5.jpg" style="width:100%">
+              </div>
+      
+                
+              <div class="mySlides">
+                <div class="numbertext">17 / 24</div>
+                <img src="./assets/images/gallery/wom11.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">18 / 24</div>
+                <img src="./assets/images/gallery/session1.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">19 / 24</div>
+                <img src="./assets/images/gallery/award0.jpg" style="width:100%">
+              </div>
+      
+              <div class="mySlides">
+                <div class="numbertext">20 / 24</div>
+                <img src="./assets/images/gallery/award1.jpg" style="width:100%">
+              </div>
+                
+              <div class="mySlides">
+                <div class="numbertext">21 / 24</div>
+                <img src="./assets/images/gallery/award2.jpg" style="width:100%">
+              </div>
+      
+              <div class="mySlides">
+                <div class="numbertext">22 / 24</div>
+                <img src="./assets/images/gallery/award3.jpg" style="width:100%">
+              </div>
+      
+                
+              <div class="mySlides">
+                <div class="numbertext">23 / 24</div>
+                <img src="./assets/images/gallery/teacher1.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">24 / 24</div>
+                <img src="./assets/images/gallery/teacher2.jpg" style="width:100%">
+              </div>
+
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)"><img src="./assets/images/prev.png"/></a>
+        <a class="next" onclick="plusSlides(1)"><img src="./assets/images/next.png"/></a>
+
+        <div class="caption-container">
+          <p class="caption-container-text" id="caption"></p>
+        </div>
+
+        <div class="row">
+          <div class="gallery-preview">
+            <div class="column">
+              <img class="demo cursor" src="./assets/images/gallery/excursion1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Excursion to Unilag">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="./assets/images/gallery/excursion2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Excursion to Unilag">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="./assets/images/gallery/excursion3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Excursion to Unilag">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="./assets/images/gallery/excursion5.jpg" style="width:100%" onclick="currentSlide(4)" alt="Excursion to Unilag">
+            </div>    
+            <div class="column">
+              <img class="demo cursor" src="./assets/images/gallery/project1.jpg" style="width:100%" onclick="currentSlide(5)" alt="Practicals - Garri Making">
+            </div> 
+            <div class="column">
+              <img class="demo cursor" src="./assets/images/gallery/project2.jpg" style="width:100%" onclick="currentSlide(6)" alt="Practicals - Soap making">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="./assets/images/gallery/project4.jpg" style="width:100%" onclick="currentSlide(7)" alt="Practicals">
+            </div>    
+            <div class="column">
+              <img class="demo cursor" src="./assets/images/gallery/check1.jpg" style="width:100%" onclick="currentSlide(8)" alt="Students performing experiment in the Laboratory">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="./assets/images/gallery/project6.jpg" style="width:100%" onclick="currentSlide(9)" alt="Practicals - Garri Making">
+            </div>    
+            <div class="column">
+              <img class="demo cursor" src="./assets/images/gallery/project7.jpg" style="width:100%" onclick="currentSlide(10)" alt="Practicals - Garri Making">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="./assets/images/gallery/girl1.jpg" style="width:100%" onclick="currentSlide(11)" alt="Students performing experiment in the Laboratory">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="./assets/images/gallery/interaction1.jpg" style="width:100%" onclick="currentSlide(12)" alt="Projects">
+            </div> 
+            <div class="column">
+              <img class="demo cursor" src="./assets/images/gallery/interaction2.jpg" style="width:100%" onclick="currentSlide(13)" alt="Celebrating International Women's Day">
+            </div>    
+            <div class="column">
+              <img class="demo cursor" src="./assets/images/gallery/interaction3.jpg" style="width:100%" onclick="currentSlide(14)" alt="Pictures from STEM Club Inauguration ceremony at Idi-Araba junior High school and Mushin Community junior high school">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="./assets/images/gallery/interaction4.jpg" style="width:100%" onclick="currentSlide(15)" alt="Pictures from STEM Club Inauguration ceremony at Idi-Araba junior High school and Mushin Community junior high school">
+            </div>    
+            <div class="column">
+              <img class="demo cursor" src="./assets/images/gallery/interaction5.jpg" style="width:100%" onclick="currentSlide(16)" alt="Celebrating International Women's Day">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="./assets/images/gallery/wom11.jpg" style="width:100%" onclick="currentSlide(17)" alt="Celebrating International Women's Day">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="./assets/images/gallery/session1.jpg" style="width:100%" onclick="currentSlide(18)" alt="Presentation">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="./assets/images/gallery/award0.jpg" style="width:100%" onclick="currentSlide(19)" alt="Celebrating International Women's Day">
+            </div>    
+            <div class="column">
+              <img class="demo cursor" src="./assets/images/gallery/award1.jpg" style="width:100%" onclick="currentSlide(20)" alt="Award Presentation">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="./assets/images/gallery/award2.jpg" style="width:100%" onclick="currentSlide(21)" alt="Award Presentation">
+            </div>    
+            <div class="column">
+              <img class="demo cursor" src="./assets/images/gallery/award3.jpg" style="width:100%" onclick="currentSlide(22)" alt="Celebrating International Women's Day">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="./assets/images/gallery/teacher1.jpg" style="width:100%" onclick="currentSlide(23)" alt="Teacher training development and Training">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="./assets/images/gallery/teacher2.jpg" style="width:100%" onclick="currentSlide(24)" alt="Teacher training and Development">
+            </div>  
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Gallery v0 Section -->
+  <!-- <section class="upcoming-meetings" id="gallery">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>Gallery</h2>
+            <br/>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+
+                  <a href="meeting-details.html"><img src="assets/images/meeting-01.jpg" alt="New Lecturer Meeting"></a>
+                </div>
+                <div class="down-content">
+                  <div class="date">
+                    <h6>May. <span>10</span></h6>
+                  </div>
+                  <a href="meeting-details.html"><h4>STEM Conference</h4></a>
+                  <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <a href="meeting-details.html"><img src="assets/images/meeting-01.jpg" alt="New Lecturer Meeting"></a>
+                </div>
+                <div class="down-content">
+                  <div class="date">
+                    <h6>Nov <span>10</span></h6>
+                  </div>
+                  <a href="meeting-details.html"><h4>New Lecturers Meeting</h4></a>
+                  <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <a href="meeting-details.html"><img src="assets/images/meeting-01.jpg" alt="New Lecturer Meeting"></a>
+                </div>
+                <div class="down-content">
+                  <div class="date">
+                    <h6>Nov <span>10</span></h6>
+                  </div>
+                  <a href="meeting-details.html"><h4>New Lecturers Meeting</h4></a>
+                  <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Courses Section -->
+  <section class="our-courses" id="courses">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>Courses</h2>
+            <p>We offer specialized courses in the following subjects:</p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="owl-courses-item owl-carousel">
+            <div class="item">
+              <img src="assets/images/subject courses/english.jpg" alt="Course One" height="200">
+              <div class="down-content">
+                <h4>English</h4>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/subject courses/math.jpg" alt="Course Two" height="200">
+              <div class="down-content">
+                <h4>Mathematics</h4>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/subject courses/chem.jpg" alt="Course One" height="200">
+              <div class="down-content">
+                <h4>Chemistry</h4>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/course-04.jpg" alt="Course Two" height="200">
+              <div class="down-content">
+                <h4>Physics</h4>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/subject courses/bio.jpg" alt="Course One" height="200">
+              <div class="down-content">
+                <h4>Biology</h4>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/subject courses/tech.jpg" alt="Course Two" height="200">
+              <div class="down-content">
+                <h4>IT (Robotics, Web Development etc.)</h4>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/subject courses/eco12.jpg" alt="Course One" height="200">
+              <div class="down-content">
+                <h4>Climate Education and Sustainability</h4>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/subject courses/sdg.jpg" alt="Course Two" height="200">
+              <div class="down-content">
+                <h4>Sustainable Development Goals</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donation Section -->
+  <section class="our-facts" id="donation">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2>Invest in a Girl's Future Today</h2>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-12">
+                  <div class="count-area-content">
+                    <div class="count-digit"> - </div>
+                    <div class="count-title">Account Number</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="count-area-content">
+                    <div class="count-text"> - </div>
+                    <div class="count-title">Account Name</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-12 align-self-center">
+                  <div class="count-area-content new-students">
+                    <div class="count-text"> - </div>
+                    <div class="count-title">Bank Name</div>
+                  </div>
+                </div> 
+                <div class="col-12">
+                  <!-- <div class="count-area-content">
+                    <div class="count-digit">32</div>
+                    <div class="count-title">Donations Made</div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-6 align-self-center">
+          <div class="video">
+            <a href="https://www.youtube.com/watch?v=HndV87XpkWg" target="_blank"><img src="assets/images/play-icon.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Extra- Counter -->
+  <!-- <section class="our-facts" id="donation">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2>Invest in a Girls Future Today</h2>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-12">
+                  <div class="count-area-content percentage">
+                    <div class="count-digit">94</div>
+                    <div class="count-title">Succesed Students</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="count-area-content">
+                    <div class="count-digit">126</div>
+                    <div class="count-title">Current Teachers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-12">
+                  <div class="count-area-content new-students">
+                    <div class="count-digit">2345</div>
+                    <div class="count-title">New Students</div>
+                  </div>
+                </div> 
+                <div class="col-12">
+                  <div class="count-area-content">
+                    <div class="count-digit">32</div>
+                    <div class="count-title">Awards</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-6 align-self-center">
+          <div class="video">
+            <a href="https://www.youtube.com/watch?v=HndV87XpkWg" target="_blank"><img src="assets/images/play-icon.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+  <!-- Teams Section -->
+  <section class="our-teams" id="teams">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>Our Team</h2>
+            <br/>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="owl-courses-item owl-carousel">
+            <div class="item">
+              <img src="assets/images/team/CoachRay.jpg" height="300" alt="The Founder's Image">
+              <div class="down-content">
+                <h4>Coach Ray J</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-12">
+                      <h6>CEO/Founder of Grade Egde Academy</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/team/ec.jpg" height="300" alt="Alt2">
+              <div class="down-content">
+                <h4>Miss A.N NN</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-12">
+                      <h6>Asst. CEO/Founder of Grade Egde Academy</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/team/dok.jpg" height="300" alt="Alt2">
+              <div class="down-content">
+                <h4>Bro. Samuel Ligato</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-12">
+                      <h6>Trustee</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/team/vj7.jpg" height="300" alt="Alt2">
+              <div class="down-content">
+                <h4>Vini Jr</h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-12">
+                      <h6>Investor</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact-us" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 align-self-center">
+          <div class="row">
+            <div class="col-lg-12">
+              <!-- Form -->
+              <!-- Quote action="contact_process.php" novalidate="novalidate" -->
+              <form id="contact" method="post">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2>Send Us a Message</h2>
+                  </div>
+                  <div class="col-lg-3">
+                    <fieldset>
+                      <input name="name" type="text" name="name" id="name" placeholder="YOURNAME...*" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-3">
+                    <fieldset>
+                    <input name="email" type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="EMAIL ADDRESS" required="">
+                  </fieldset>
+                  </div>
+                  <div class="col-lg-3">
+                    <fieldset>
+                      <input name="subject" type="text" name="subject" id="subject" placeholder="MAIL SUBJECT...*" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-3">
+                    <fieldset>
+                      <input name="number" type="text" id="number" placeholder="PHONE NO." maxlength="14"/>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" type="text" class="form-control" name="message" id="message" placeholder="YOUR MESSAGE..." required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" name="send" id="form-submit" class="button">SEND MESSAGE NOW</button>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 success-mssg">
+                    <span class="success-mg">
+                      <?php if(!empty($successMessage)){ ?>
+                      <strong><?php echo $successMessage; ?></strong>
+                      <?php } ?>
+                    </span>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="right-info">
+            <ul>
+              <li>
+                <h6>Phone Number</h6>
+                <span>+2348068319390</span>
+              </li>
+              <li>
+                <h6>Email Address</h6>
+                <div class="conmailtext">
+                  <mailspan>contactgradeedge@gmail.com</mailspan>
+                </div>
+              </li>
+              <li>
+                <h6>Street Address</h6>
+                <span>50, Oremeji Street, Ilasamaja, Mushin, Lagos, Nigeria.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Copyright © 
+        <script>document.write(new Date().getFullYear());</script>
+         Grade Edge Academy. All Rights Reserved. </p>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+          e.preventDefault();
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+    <!-- Slideshow script -->
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
+      <!-- Scroll To Top -->
+      <script>
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        </script>
+</body>
+
+</body>
+</html>

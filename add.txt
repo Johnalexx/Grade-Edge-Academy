@@ -1,0 +1,33 @@
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <nav class="main-nav">
+                      <!-- ***** Menu Start ***** -->
+                      <ul class="nav">
+                        <!-- ***** Logo Start ***** -->
+                        <li class="nav-logo navbar-brand scroll-to-section">
+                          <a href="index.html">
+                            <img src="./private/assets/Logo1.png" width="50" height="50"/>
+                          </a>
+                        </li>
+                        <!-- ***** Logo End ***** -->
+                          <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                          <li class="scroll-to-section"><a href="#about">About Us</a></li>
+                          <li class="scroll-to-section"><a href="#gallery">Gallery</a></li> 
+                          <li class="scroll-to-section"><a href="#courses">Courses</a></li> 
+                          <li class="scroll-to-section"><a href="#donation">Donations</a></li>
+                          <li class="scroll-to-section"><a href="#teams">Our Team</a></li>
+                          <li class="scroll-to-section"><a href="#contact">Contact Us</a></li> 
+                      </ul>        +
+                      <a class='menu-trigger'>
+                          <span>Menu</span>
+                      </a>
+                      <!-- ***** Menu End ***** -->
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
