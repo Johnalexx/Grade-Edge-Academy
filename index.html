@@ -22,32 +22,11 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/lightbox.css">
 
+    <!-- SMTP JS -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </head>
 
 <body>
-  <!-- Form PHP -->
-  <?php
-    if(!empty($_POST["send"])){
-      $name = $_POST["name"];
-      $email = $_POST["email"];
-      $number = $_POST["number"];
-      $subject = $_POST["subject"];
-      $message = $_POST["message"];
-      $toEmail = $_POST["adegbolajohn1@gmail.com"];
-
-      $mailHeaders = "From: " . $email . "\r\n" .
-       "Name: " . $name . 
-      "\r\n Email address: " . $email .
-      "\r\n Phone Number: " . $number .
-      "\r\n Email Subject: " . $subject .
-      "\r\n Message: " . $message . "\r\n";
-
-      if(mail($toEmail, $subject, $mailHeaders)){
-        $successMessage = "Your Information has been Successfully Received"
-      }
-
-    }
-  ?>
   <!-- Sub Header -->
   <!-- <div class="sub-header">
     <div class="container">
@@ -909,7 +888,7 @@
             <div class="col-lg-12">
               <!-- Form -->
               <!-- Quote action="contact_process.php" novalidate="novalidate" -->
-              <form id="contact" method="post" action="contact_process.php">
+              <form id="contact" name="contact" method="post">
                 <div class="row">
                   <div class="col-lg-12">
                     <h2>Send Us a Message</h2>
@@ -941,15 +920,8 @@
                   </div>
                   <div class="col-lg-12">
                     <fieldset>
-                      <button type="submit" name="send" id="form-submit" class="button">SEND MESSAGE NOW</button>
+                      <button type="submit" onclick="sendEmail()" name="send" id="form-submit" class="button">SEND MESSAGE NOW</button>
                     </fieldset>
-                  </div>
-                  <div class="col-lg-12 success-mssg">
-                    <span class="success-mg">
-                      <?php if(!empty($successMessage)){ ?>
-                      <strong><?php echo $successMessage; ?></strong>
-                      <?php } ?>
-                    </span>
                   </div>
                 </div>
               </form>
@@ -997,6 +969,28 @@
     <script src="assets/js/video.js"></script>
     <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script>
+      // SMTP JS
+function sendEmail() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var subject = document.getElementById("subject").value;
+  var number = document.getElementById("number").value;
+  var message = document.getElementById("message").value;
+
+  Email.send({
+    Host: "smtp.gmail.com",
+    Username : "your-email-address@gmail.com",
+    Password : "your-email-password",
+    To : 'recipient-email-address@example.com',
+    From : "your-email-address@gmail.com",
+    Subject : "New Contact Form Submission",
+    Body : "Name: " + name + "<br>Sender Email: " + email + "<br>Sender Number: " + number + "<br>Message: " + message
+  }).then(
+    message => alert("mail sent successfully")
+  );
+}
+    </script>
     <script>
         //according to loftblog tut
         $('.nav li:first').addClass('active');
@@ -1091,7 +1085,8 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
-        </script>
+        
+</script>
 </body>
 
 </body>
