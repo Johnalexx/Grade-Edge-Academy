@@ -2714,3 +2714,9 @@ section.our-gallery .row .column{
   border-radius: 20px;
   /* background-color: #d6d0d0; */
 }
+.sponsor{
+  padding-top: 10px;
+}
+.sponsor img{
+  width: 5%;
+}
