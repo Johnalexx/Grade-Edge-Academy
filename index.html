@@ -132,12 +132,16 @@
                     <br/>
                     <br/>
                       <div class="hero-quote">
+                        <br/>
                         <h3><marquee>
                           "For the world to rise to the challenges of the
                           21st century, there must be a joint effort to end gender imbalance in science" - 
                           <span class="quoter"><b>Antonio Gutteres ,UN Secretary General</b></span>
+                          || "Science is the key to our future, and if you don't believe in science, then 
+                          you're holding everybody back" - 
+                          <span class="quoter"><b>Bill Nye</b></span>
                         </marquee></h3>
-                          <br/><br/><br/><br/>
+                          <br/>
                       </div>
                     </div>
                   </div>
@@ -962,7 +966,7 @@
     <script src="assets/js/video.js"></script>
     <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/custom.js"></script>
-    <script>
+    <!-- <script>
       // SMTP JS
 function sendEmail() {
   var name = document.getElementById("name").value;
@@ -983,7 +987,58 @@ function sendEmail() {
     message => alert("mail sent successfully")
   );
 }
+    </script> -->
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script>
+
+      (function () {
+
+        emailjs.init("WsBk9wKkn2MHDt6b_");
+
+      })();
+
     </script>
+
+
+    <script>
+
+      document.getElementById("contact").addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        var templateParams = {
+
+          name: document.getElementById("name").value,
+
+          email: document.getElementById("email").value,
+
+          message: document.getElementById("message").value,
+
+          subject : document.getElementById("subject").value,
+
+          number : document.getElementById("number").value,
+
+        };
+
+        emailjs.sendForm("service_qs63p49", "template_al1rya3", "#contact")
+
+          .then(function(response) {
+
+            console.log("Success!", response.status, response.text);
+
+          }, function(error) {
+
+            console.log("Failed...", error);
+
+          });
+
+      });
+
+    </script>
+
+
     <script>
         //according to loftblog tut
         $('.nav li:first').addClass('active');
