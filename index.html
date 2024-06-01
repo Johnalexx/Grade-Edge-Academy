@@ -25,7 +25,14 @@
     <!-- SMTP JS -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- MailJS -->
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script
+
+    type="text/javascript"
+  
+    src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+  
+    ></script>
+  
   </head>
 
 <body>
@@ -911,7 +918,7 @@
                   </div>
                   <div class="col-lg-12">
                     <fieldset>
-                      <button type="submit" onclick="sendEmail()" name="send" id="form-submit" class="button">SEND MESSAGE NOW</button>
+                      <button type="submit" onclick="sendEmail(event)" name="send" id="form-submit" class="button">SEND MESSAGE NOW</button>
                     </fieldset>
                   </div>
                 </div>
@@ -991,6 +998,8 @@ function sendEmail() {
 }
     </script> -->
     <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
     <script>
 
       (function () {
@@ -1001,43 +1010,29 @@ function sendEmail() {
 
     </script>
 
-
     <script>
-
-      document.getElementById("contact").addEventListener("submit", function (event) {
-
-        event.preventDefault();
-
-        var templateParams = {
-
-          name: document.getElementById("name").value,
-
-          email: document.getElementById("email").value,
-
-          subject : document.getElementById("subject").value,
-
-          number : document.getElementById("number").value,
-
-          message: document.getElementById("message").value,
-
-        };
-
-        emailjs.sendForm("service_qs63p49", "template_al1rya3", "#contact")
-
-          .then(function(response) {
-
-            window.alert("Success!", response.status, response.text);
-
-          }, function(error) {
-
-            window.alert("Failed...", error);
-
-          });
-
-      });
-
+      function sendEmail(e) {
+        e.preventDefault();
+        emailjs
+          .sendForm(
+            "service_qs63p49",
+            "template_al1rya3",
+            e.target,
+            "WsBk9wKkn2MHDt6b_"
+          )
+          .then(
+            (result) => {
+              console.log(result.text);
+              alert("Message sent successfully!");
+              document.getElementById("contact").reset();
+            },
+            (error) => {
+              console.log(error.text);
+              alert("Something went wrong. Please try again later.");
+            }
+          );
+      }
     </script>
-
 
     <script>
         //according to loftblog tut
