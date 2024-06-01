@@ -1014,11 +1014,11 @@ function sendEmail() {
 
           email: document.getElementById("email").value,
 
-          message: document.getElementById("message").value,
-
           subject : document.getElementById("subject").value,
 
           number : document.getElementById("number").value,
+
+          message: document.getElementById("message").value,
 
         };
 
@@ -1026,11 +1026,11 @@ function sendEmail() {
 
           .then(function(response) {
 
-            console.log("Success!", response.status, response.text);
+            window.alert("Success!", response.status, response.text);
 
           }, function(error) {
 
-            console.log("Failed...", error);
+            window.alert("Failed...", error);
 
           });
 
