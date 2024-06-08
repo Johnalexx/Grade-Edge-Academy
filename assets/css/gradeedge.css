@@ -1067,6 +1067,9 @@ section.about-us .item {
   margin-bottom: 30px;
 }
 
+section.about-us .item .card {
+}
+
 section.about-us .item h3 {
   color: #ffffff;
   text-transform: uppercase;
